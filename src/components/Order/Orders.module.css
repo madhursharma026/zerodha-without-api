@@ -1,0 +1,52 @@
+.textColor {
+    color: var(--text-color);
+}
+
+.rightSidebarContainer {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.rightColumn {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(100dvh - 50px);
+    padding-bottom: 100px;
+    scrollbar-width: none;
+}
+
+.rightColumn::-webkit-scrollbar {
+    display: none;
+}
+
+/* Table Styling */
+.tableStyle {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.tableStyle th,
+.tableStyle td {
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+.tableStyle tbody tr:hover {
+    background-color: var(--hover-color);
+}
+
+/* Card Styling (Mobile) */
+.cardStyle {
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Tags (BUY, OPEN, etc.) */
+.tag {
+    background: #ecf2fd;
+    color: #121212;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}

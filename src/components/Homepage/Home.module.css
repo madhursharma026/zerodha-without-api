@@ -1,0 +1,55 @@
+/* Divider */
+.divider {
+    color: #dad0d0;
+    margin: 1.5rem 0;
+}
+
+/* Border only on >= sm */
+.borderEndOnlySm {
+    border-right: none;
+}
+
+@media (min-width: 576px) {
+    .borderEndOnlySm {
+        border-right: 1px solid var(--border-color);
+    }
+}
+
+/* Scrollable right column */
+.rightColumn {
+    overflow-y: auto;
+    max-height: calc(100dvh - 50px);
+    padding-bottom: 100px;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.rightColumn::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+/* Theme-driven colors */
+.textColor {
+    color: var(--text-color);
+}
+
+.rightSidebarContainer {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Chart display toggle */
+.imgLightChart {
+    display: var(--displayImageLight);
+}
+
+.imgDarkChart {
+    display: var(--displayImageDark);
+}
+
+/* Art board image */
+.artBoard {
+    height: auto;
+    max-width: 100px;
+}
